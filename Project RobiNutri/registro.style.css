@@ -1,0 +1,185 @@
+/* --- Importación de Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Quicksand:wght@400;700&display=swap');
+
+/* --- Estilos Globales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #E6E3F9; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main.register-container {
+    width: 100%;
+    max-width: 700px; /* Ancho máximo del formulario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- 1. Logo y Subtítulo --- */
+.header-logo {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.logo-image {
+    max-width: 300px; /* Ajustar a necesidad */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* --- 2. Contenedor del Formulario --- */
+.form-container {
+    width: 100%;
+    background-color: #FFFEEF;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem; /* Tipografía Fredoka */
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.helper-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Estilos para inputs y selects */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background-color: #C4BBFF;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    -webkit-appearance: none; /* Quita estilos por defecto de iOS */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+::placeholder {
+    color: #5c529a;
+    opacity: 1; /* Firefox */
+}
+
+/* --- Layout de Filas (Mobile-first: apilado) --- */
+.form-row {
+    display: flex;
+    flex-direction: column; /* Apilado en móvil */
+    gap: 15px;
+}
+
+.half-width {
+    width: 100%;
+}
+
+.date-fields {
+    flex-direction: row; /* La fecha siempre en fila, pero... */
+    gap: 10px;
+}
+
+.date-fields select {
+    flex: 1; /* Distribuye el espacio */
+}
+
+
+/* --- Botón de Registro --- */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #8BC53F;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #00AA36;
+}
+
+/* --- Enlace a Iniciar Sesión --- */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+.login-link a {
+    color: #007bff; 
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* --- 3. Footer (Slogan) --- */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #444;
+    max-width: 600px;
+    padding-bottom: 5px;
+}
+
+/* --- RNF-002: Diseño Adaptativo (Escritorio) --- */
+@media (min-width: 768px) {
+    .form-container {
+        padding: 40px;
+    }
+
+    /* Las filas ahora son horizontales */
+    .form-row {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .half-width {
+        flex: 1; /* Ocupa mitad y mitad */
+    }
+
+    /* Corregimos apilamiento de fecha en móvil (si era necesario) */
+    .date-fields {
+        flex-direction: row; 
+        gap: 15px;
+    }
+}
