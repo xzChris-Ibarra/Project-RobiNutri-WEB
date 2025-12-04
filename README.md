@@ -55,8 +55,12 @@ Se eligió el modelo tradicional porque el proyecto No es nuevo, y por ende, los
 
 ## 4. Autores
 
-*Christian Ibarra - Desarrollador Frontend y Diseñador UI/UX.*
+*Christian Ibarra - 240247
 
-*Gerardo Dávalos - Desarrollador Full-Stack.*
+*Gerardo Dávalos - 240278
 
-*Diego Ruíz - Diseñador UI/UX y Desarrollador Frontend.*
+*Diego Ruíz - 240259
+
+## WEB de Hosting Temporal
+
+https://robinutri.alwaysdata.net/
