@@ -1,0 +1,4 @@
+<?php
+//ESTE ARCHIVO NUNCA SE DEBE SUBIR A GITHUB
+define('OPENAI_API_KEY', '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');
+?>
